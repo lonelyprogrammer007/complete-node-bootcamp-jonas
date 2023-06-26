@@ -1,0 +1,15 @@
+{
+  "name": "complete-node-bootcamp",
+  "version": "1.0.0",
+  "description": "This repo contains starter files and the finished project files for all the projects contained in the course (complete repo size is **288MB**).",
+  "main": "temp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0"
+  }
+}
