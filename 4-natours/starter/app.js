@@ -20,8 +20,7 @@ app
   })
   .post((req, res, next) => {
     const id = tours[tours.length - 1].id + 1
-    const tour = structuredClone(req.body)
-    tour.id = id
+    const tour = {id, ...structuredClone(req.body)}
 
     tours.push(tour)
     fs.writeFile(
