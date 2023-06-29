@@ -11,7 +11,7 @@ const validateParam = name => (req, res, next, val) => {
   next()
 }
 
-const validateStructure = requiredFields => (req, res, next) => {
+const validateBody = requiredFields => (req, res, next) => {
   const missingFields = []
   const bodyFields = Object.keys(req.body)
 
@@ -32,7 +32,7 @@ const validateStructure = requiredFields => (req, res, next) => {
 }
 
 module.exports = {
-  validateStructure,
+  validateBody,
   validateParams,
   validateParam,
   validateBody

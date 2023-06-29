@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 
-const { validateStructure } = require('../utils/validators')
+const { validateBody } = require('../utils/validators')
 
 const tours = JSON.parse(
   fs.readFileSync(
