@@ -1,19 +1,29 @@
 {
-  "extends": ["airbnb", "prettier", "plugin:node/recommended"],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "extends": ["google", "plugin:prettier/recommended", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
   "plugins": ["prettier"],
   "rules": {
-    "prettier/prettier": "error",
-    "spaced-comment": "off",
-    "no-console": "warn",
-    "consistent-return": "off",
-    "func-names": "off",
-    "object-shorthand": "off",
-    "no-process-exit": "off",
-    "no-param-reassign": "off",
-    "no-return-await": "off",
-    "no-underscore-dangle": "off",
-    "class-methods-use-this": "off",
-    "prefer-destructuring": ["error", { "object": true, "array": false }],
-    "no-unused-vars": ["error", { "argsIgnorePattern": "req|res|next|val" }]
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto",
+        "printWidth": 80,
+        "tabWidth": 2,
+        "useTabs": false,
+        "semi": false,
+        "singleQuote": true,
+        "trailingComma": "none",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": true,
+        "arrowParens": "avoid"
+      }
+    ]
   }
 }
