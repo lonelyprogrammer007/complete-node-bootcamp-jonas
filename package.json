@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "cross-env NODE_ENV=development npx nodemon ./4-natours/starter/server/server.js",
-    "start:prod": "cross-env NODE_ENV=production npx nodemon ./4-natours/starter/server/server.js"
+    "start:prod": "cross-env NODE_ENV=production npx nodemon ./4-natours/starter/server/server.js",
+    "format": "eslint --fix ./4-natours/starter/**/*.js"
   },
   "keywords": [],
   "author": "",

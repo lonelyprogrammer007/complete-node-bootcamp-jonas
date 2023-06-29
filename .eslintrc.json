@@ -24,6 +24,7 @@
         "jsxBracketSameLine": true,
         "arrowParens": "avoid"
       }
-    ]
+    ],
+    "new-cap": "off"
   }
 }

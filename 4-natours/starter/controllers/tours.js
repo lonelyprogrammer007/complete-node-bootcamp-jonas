@@ -1,8 +1,6 @@
 const fs = require('fs')
 const path = require('path')
 
-const { validateBody } = require('../utils/validators')
-
 const tours = JSON.parse(
   fs.readFileSync(
     path.join(__dirname, '..', 'dev-data', 'data', 'tours-simple.json')
@@ -60,7 +58,7 @@ const getTour = (req, res) => {
 const updateTour = (req, res, next) => {
   const id = Number(req.params.id)
 
-  let tour = tours.find(el => el.id === id)
+  const tour = tours.find(el => el.id === id)
   if (!tour) {
     return res.status(404).json({
       status: 'fail',
